@@ -1,0 +1,8 @@
+'use strict';
+angular.module('config', [])
+
+.constant('ENV', 'local')
+.constant('VERSION', '0.0.1')
+.constant('CONFIG', {
+	API_URL: 'http://local.api.ultimatefightmanager.com'
+});

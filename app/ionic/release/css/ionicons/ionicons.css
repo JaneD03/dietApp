@@ -1,0 +1,4431 @@
+@charset "UTF-8";
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face {
+  font-family: "Ionicons";
+  src: url("../fonts/ionicons.eot?v=2.0.0");
+  src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("../fonts/ionicons.woff?v=2.0.0") format("woff"), url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-font\.scss}line{font-family:\0000315}}
+.ion, .ionicons,
+.ion-alert:before,
+.ion-alert-circled:before,
+.ion-android-add:before,
+.ion-android-add-circle:before,
+.ion-android-alarm-clock:before,
+.ion-android-alert:before,
+.ion-android-apps:before,
+.ion-android-archive:before,
+.ion-android-arrow-back:before,
+.ion-android-arrow-down:before,
+.ion-android-arrow-dropdown:before,
+.ion-android-arrow-dropdown-circle:before,
+.ion-android-arrow-dropleft:before,
+.ion-android-arrow-dropleft-circle:before,
+.ion-android-arrow-dropright:before,
+.ion-android-arrow-dropright-circle:before,
+.ion-android-arrow-dropup:before,
+.ion-android-arrow-dropup-circle:before,
+.ion-android-arrow-forward:before,
+.ion-android-arrow-up:before,
+.ion-android-attach:before,
+.ion-android-bar:before,
+.ion-android-bicycle:before,
+.ion-android-boat:before,
+.ion-android-bookmark:before,
+.ion-android-bulb:before,
+.ion-android-bus:before,
+.ion-android-calendar:before,
+.ion-android-call:before,
+.ion-android-camera:before,
+.ion-android-cancel:before,
+.ion-android-car:before,
+.ion-android-cart:before,
+.ion-android-chat:before,
+.ion-android-checkbox:before,
+.ion-android-checkbox-blank:before,
+.ion-android-checkbox-outline:before,
+.ion-android-checkbox-outline-blank:before,
+.ion-android-checkmark-circle:before,
+.ion-android-clipboard:before,
+.ion-android-close:before,
+.ion-android-cloud:before,
+.ion-android-cloud-circle:before,
+.ion-android-cloud-done:before,
+.ion-android-cloud-outline:before,
+.ion-android-color-palette:before,
+.ion-android-compass:before,
+.ion-android-contact:before,
+.ion-android-contacts:before,
+.ion-android-contract:before,
+.ion-android-create:before,
+.ion-android-delete:before,
+.ion-android-desktop:before,
+.ion-android-document:before,
+.ion-android-done:before,
+.ion-android-done-all:before,
+.ion-android-download:before,
+.ion-android-drafts:before,
+.ion-android-exit:before,
+.ion-android-expand:before,
+.ion-android-favorite:before,
+.ion-android-favorite-outline:before,
+.ion-android-film:before,
+.ion-android-folder:before,
+.ion-android-folder-open:before,
+.ion-android-funnel:before,
+.ion-android-globe:before,
+.ion-android-hand:before,
+.ion-android-hangout:before,
+.ion-android-happy:before,
+.ion-android-home:before,
+.ion-android-image:before,
+.ion-android-laptop:before,
+.ion-android-list:before,
+.ion-android-locate:before,
+.ion-android-lock:before,
+.ion-android-mail:before,
+.ion-android-map:before,
+.ion-android-menu:before,
+.ion-android-microphone:before,
+.ion-android-microphone-off:before,
+.ion-android-more-horizontal:before,
+.ion-android-more-vertical:before,
+.ion-android-navigate:before,
+.ion-android-notifications:before,
+.ion-android-notifications-none:before,
+.ion-android-notifications-off:before,
+.ion-android-open:before,
+.ion-android-options:before,
+.ion-android-people:before,
+.ion-android-person:before,
+.ion-android-person-add:before,
+.ion-android-phone-landscape:before,
+.ion-android-phone-portrait:before,
+.ion-android-pin:before,
+.ion-android-plane:before,
+.ion-android-playstore:before,
+.ion-android-print:before,
+.ion-android-radio-button-off:before,
+.ion-android-radio-button-on:before,
+.ion-android-refresh:before,
+.ion-android-remove:before,
+.ion-android-remove-circle:before,
+.ion-android-restaurant:before,
+.ion-android-sad:before,
+.ion-android-search:before,
+.ion-android-send:before,
+.ion-android-settings:before,
+.ion-android-share:before,
+.ion-android-share-alt:before,
+.ion-android-star:before,
+.ion-android-star-half:before,
+.ion-android-star-outline:before,
+.ion-android-stopwatch:before,
+.ion-android-subway:before,
+.ion-android-sunny:before,
+.ion-android-sync:before,
+.ion-android-textsms:before,
+.ion-android-time:before,
+.ion-android-train:before,
+.ion-android-unlock:before,
+.ion-android-upload:before,
+.ion-android-volume-down:before,
+.ion-android-volume-mute:before,
+.ion-android-volume-off:before,
+.ion-android-volume-up:before,
+.ion-android-walk:before,
+.ion-android-warning:before,
+.ion-android-watch:before,
+.ion-android-wifi:before,
+.ion-aperture:before,
+.ion-archive:before,
+.ion-arrow-down-a:before,
+.ion-arrow-down-b:before,
+.ion-arrow-down-c:before,
+.ion-arrow-expand:before,
+.ion-arrow-graph-down-left:before,
+.ion-arrow-graph-down-right:before,
+.ion-arrow-graph-up-left:before,
+.ion-arrow-graph-up-right:before,
+.ion-arrow-left-a:before,
+.ion-arrow-left-b:before,
+.ion-arrow-left-c:before,
+.ion-arrow-move:before,
+.ion-arrow-resize:before,
+.ion-arrow-return-left:before,
+.ion-arrow-return-right:before,
+.ion-arrow-right-a:before,
+.ion-arrow-right-b:before,
+.ion-arrow-right-c:before,
+.ion-arrow-shrink:before,
+.ion-arrow-swap:before,
+.ion-arrow-up-a:before,
+.ion-arrow-up-b:before,
+.ion-arrow-up-c:before,
+.ion-asterisk:before,
+.ion-at:before,
+.ion-backspace:before,
+.ion-backspace-outline:before,
+.ion-bag:before,
+.ion-battery-charging:before,
+.ion-battery-empty:before,
+.ion-battery-full:before,
+.ion-battery-half:before,
+.ion-battery-low:before,
+.ion-beaker:before,
+.ion-beer:before,
+.ion-bluetooth:before,
+.ion-bonfire:before,
+.ion-bookmark:before,
+.ion-bowtie:before,
+.ion-briefcase:before,
+.ion-bug:before,
+.ion-calculator:before,
+.ion-calendar:before,
+.ion-camera:before,
+.ion-card:before,
+.ion-cash:before,
+.ion-chatbox:before,
+.ion-chatbox-working:before,
+.ion-chatboxes:before,
+.ion-chatbubble:before,
+.ion-chatbubble-working:before,
+.ion-chatbubbles:before,
+.ion-checkmark:before,
+.ion-checkmark-circled:before,
+.ion-checkmark-round:before,
+.ion-chevron-down:before,
+.ion-chevron-left:before,
+.ion-chevron-right:before,
+.ion-chevron-up:before,
+.ion-clipboard:before,
+.ion-clock:before,
+.ion-close:before,
+.ion-close-circled:before,
+.ion-close-round:before,
+.ion-closed-captioning:before,
+.ion-cloud:before,
+.ion-code:before,
+.ion-code-download:before,
+.ion-code-working:before,
+.ion-coffee:before,
+.ion-compass:before,
+.ion-compose:before,
+.ion-connection-bars:before,
+.ion-contrast:before,
+.ion-crop:before,
+.ion-cube:before,
+.ion-disc:before,
+.ion-document:before,
+.ion-document-text:before,
+.ion-drag:before,
+.ion-earth:before,
+.ion-easel:before,
+.ion-edit:before,
+.ion-egg:before,
+.ion-eject:before,
+.ion-email:before,
+.ion-email-unread:before,
+.ion-erlenmeyer-flask:before,
+.ion-erlenmeyer-flask-bubbles:before,
+.ion-eye:before,
+.ion-eye-disabled:before,
+.ion-female:before,
+.ion-filing:before,
+.ion-film-marker:before,
+.ion-fireball:before,
+.ion-flag:before,
+.ion-flame:before,
+.ion-flash:before,
+.ion-flash-off:before,
+.ion-folder:before,
+.ion-fork:before,
+.ion-fork-repo:before,
+.ion-forward:before,
+.ion-funnel:before,
+.ion-gear-a:before,
+.ion-gear-b:before,
+.ion-grid:before,
+.ion-hammer:before,
+.ion-happy:before,
+.ion-happy-outline:before,
+.ion-headphone:before,
+.ion-heart:before,
+.ion-heart-broken:before,
+.ion-help:before,
+.ion-help-buoy:before,
+.ion-help-circled:before,
+.ion-home:before,
+.ion-icecream:before,
+.ion-image:before,
+.ion-images:before,
+.ion-information:before,
+.ion-information-circled:before,
+.ion-ionic:before,
+.ion-ios-alarm:before,
+.ion-ios-alarm-outline:before,
+.ion-ios-albums:before,
+.ion-ios-albums-outline:before,
+.ion-ios-americanfootball:before,
+.ion-ios-americanfootball-outline:before,
+.ion-ios-analytics:before,
+.ion-ios-analytics-outline:before,
+.ion-ios-arrow-back:before,
+.ion-ios-arrow-down:before,
+.ion-ios-arrow-forward:before,
+.ion-ios-arrow-left:before,
+.ion-ios-arrow-right:before,
+.ion-ios-arrow-thin-down:before,
+.ion-ios-arrow-thin-left:before,
+.ion-ios-arrow-thin-right:before,
+.ion-ios-arrow-thin-up:before,
+.ion-ios-arrow-up:before,
+.ion-ios-at:before,
+.ion-ios-at-outline:before,
+.ion-ios-barcode:before,
+.ion-ios-barcode-outline:before,
+.ion-ios-baseball:before,
+.ion-ios-baseball-outline:before,
+.ion-ios-basketball:before,
+.ion-ios-basketball-outline:before,
+.ion-ios-bell:before,
+.ion-ios-bell-outline:before,
+.ion-ios-body:before,
+.ion-ios-body-outline:before,
+.ion-ios-bolt:before,
+.ion-ios-bolt-outline:before,
+.ion-ios-book:before,
+.ion-ios-book-outline:before,
+.ion-ios-bookmarks:before,
+.ion-ios-bookmarks-outline:before,
+.ion-ios-box:before,
+.ion-ios-box-outline:before,
+.ion-ios-briefcase:before,
+.ion-ios-briefcase-outline:before,
+.ion-ios-browsers:before,
+.ion-ios-browsers-outline:before,
+.ion-ios-calculator:before,
+.ion-ios-calculator-outline:before,
+.ion-ios-calendar:before,
+.ion-ios-calendar-outline:before,
+.ion-ios-camera:before,
+.ion-ios-camera-outline:before,
+.ion-ios-cart:before,
+.ion-ios-cart-outline:before,
+.ion-ios-chatboxes:before,
+.ion-ios-chatboxes-outline:before,
+.ion-ios-chatbubble:before,
+.ion-ios-chatbubble-outline:before,
+.ion-ios-checkmark:before,
+.ion-ios-checkmark-empty:before,
+.ion-ios-checkmark-outline:before,
+.ion-ios-circle-filled:before,
+.ion-ios-circle-outline:before,
+.ion-ios-clock:before,
+.ion-ios-clock-outline:before,
+.ion-ios-close:before,
+.ion-ios-close-empty:before,
+.ion-ios-close-outline:before,
+.ion-ios-cloud:before,
+.ion-ios-cloud-download:before,
+.ion-ios-cloud-download-outline:before,
+.ion-ios-cloud-outline:before,
+.ion-ios-cloud-upload:before,
+.ion-ios-cloud-upload-outline:before,
+.ion-ios-cloudy:before,
+.ion-ios-cloudy-night:before,
+.ion-ios-cloudy-night-outline:before,
+.ion-ios-cloudy-outline:before,
+.ion-ios-cog:before,
+.ion-ios-cog-outline:before,
+.ion-ios-color-filter:before,
+.ion-ios-color-filter-outline:before,
+.ion-ios-color-wand:before,
+.ion-ios-color-wand-outline:before,
+.ion-ios-compose:before,
+.ion-ios-compose-outline:before,
+.ion-ios-contact:before,
+.ion-ios-contact-outline:before,
+.ion-ios-copy:before,
+.ion-ios-copy-outline:before,
+.ion-ios-crop:before,
+.ion-ios-crop-strong:before,
+.ion-ios-download:before,
+.ion-ios-download-outline:before,
+.ion-ios-drag:before,
+.ion-ios-email:before,
+.ion-ios-email-outline:before,
+.ion-ios-eye:before,
+.ion-ios-eye-outline:before,
+.ion-ios-fastforward:before,
+.ion-ios-fastforward-outline:before,
+.ion-ios-filing:before,
+.ion-ios-filing-outline:before,
+.ion-ios-film:before,
+.ion-ios-film-outline:before,
+.ion-ios-flag:before,
+.ion-ios-flag-outline:before,
+.ion-ios-flame:before,
+.ion-ios-flame-outline:before,
+.ion-ios-flask:before,
+.ion-ios-flask-outline:before,
+.ion-ios-flower:before,
+.ion-ios-flower-outline:before,
+.ion-ios-folder:before,
+.ion-ios-folder-outline:before,
+.ion-ios-football:before,
+.ion-ios-football-outline:before,
+.ion-ios-game-controller-a:before,
+.ion-ios-game-controller-a-outline:before,
+.ion-ios-game-controller-b:before,
+.ion-ios-game-controller-b-outline:before,
+.ion-ios-gear:before,
+.ion-ios-gear-outline:before,
+.ion-ios-glasses:before,
+.ion-ios-glasses-outline:before,
+.ion-ios-grid-view:before,
+.ion-ios-grid-view-outline:before,
+.ion-ios-heart:before,
+.ion-ios-heart-outline:before,
+.ion-ios-help:before,
+.ion-ios-help-empty:before,
+.ion-ios-help-outline:before,
+.ion-ios-home:before,
+.ion-ios-home-outline:before,
+.ion-ios-infinite:before,
+.ion-ios-infinite-outline:before,
+.ion-ios-information:before,
+.ion-ios-information-empty:before,
+.ion-ios-information-outline:before,
+.ion-ios-ionic-outline:before,
+.ion-ios-keypad:before,
+.ion-ios-keypad-outline:before,
+.ion-ios-lightbulb:before,
+.ion-ios-lightbulb-outline:before,
+.ion-ios-list:before,
+.ion-ios-list-outline:before,
+.ion-ios-location:before,
+.ion-ios-location-outline:before,
+.ion-ios-locked:before,
+.ion-ios-locked-outline:before,
+.ion-ios-loop:before,
+.ion-ios-loop-strong:before,
+.ion-ios-medical:before,
+.ion-ios-medical-outline:before,
+.ion-ios-medkit:before,
+.ion-ios-medkit-outline:before,
+.ion-ios-mic:before,
+.ion-ios-mic-off:before,
+.ion-ios-mic-outline:before,
+.ion-ios-minus:before,
+.ion-ios-minus-empty:before,
+.ion-ios-minus-outline:before,
+.ion-ios-monitor:before,
+.ion-ios-monitor-outline:before,
+.ion-ios-moon:before,
+.ion-ios-moon-outline:before,
+.ion-ios-more:before,
+.ion-ios-more-outline:before,
+.ion-ios-musical-note:before,
+.ion-ios-musical-notes:before,
+.ion-ios-navigate:before,
+.ion-ios-navigate-outline:before,
+.ion-ios-nutrition:before,
+.ion-ios-nutrition-outline:before,
+.ion-ios-paper:before,
+.ion-ios-paper-outline:before,
+.ion-ios-paperplane:before,
+.ion-ios-paperplane-outline:before,
+.ion-ios-partlysunny:before,
+.ion-ios-partlysunny-outline:before,
+.ion-ios-pause:before,
+.ion-ios-pause-outline:before,
+.ion-ios-paw:before,
+.ion-ios-paw-outline:before,
+.ion-ios-people:before,
+.ion-ios-people-outline:before,
+.ion-ios-person:before,
+.ion-ios-person-outline:before,
+.ion-ios-personadd:before,
+.ion-ios-personadd-outline:before,
+.ion-ios-photos:before,
+.ion-ios-photos-outline:before,
+.ion-ios-pie:before,
+.ion-ios-pie-outline:before,
+.ion-ios-pint:before,
+.ion-ios-pint-outline:before,
+.ion-ios-play:before,
+.ion-ios-play-outline:before,
+.ion-ios-plus:before,
+.ion-ios-plus-empty:before,
+.ion-ios-plus-outline:before,
+.ion-ios-pricetag:before,
+.ion-ios-pricetag-outline:before,
+.ion-ios-pricetags:before,
+.ion-ios-pricetags-outline:before,
+.ion-ios-printer:before,
+.ion-ios-printer-outline:before,
+.ion-ios-pulse:before,
+.ion-ios-pulse-strong:before,
+.ion-ios-rainy:before,
+.ion-ios-rainy-outline:before,
+.ion-ios-recording:before,
+.ion-ios-recording-outline:before,
+.ion-ios-redo:before,
+.ion-ios-redo-outline:before,
+.ion-ios-refresh:before,
+.ion-ios-refresh-empty:before,
+.ion-ios-refresh-outline:before,
+.ion-ios-reload:before,
+.ion-ios-reverse-camera:before,
+.ion-ios-reverse-camera-outline:before,
+.ion-ios-rewind:before,
+.ion-ios-rewind-outline:before,
+.ion-ios-rose:before,
+.ion-ios-rose-outline:before,
+.ion-ios-search:before,
+.ion-ios-search-strong:before,
+.ion-ios-settings:before,
+.ion-ios-settings-strong:before,
+.ion-ios-shuffle:before,
+.ion-ios-shuffle-strong:before,
+.ion-ios-skipbackward:before,
+.ion-ios-skipbackward-outline:before,
+.ion-ios-skipforward:before,
+.ion-ios-skipforward-outline:before,
+.ion-ios-snowy:before,
+.ion-ios-speedometer:before,
+.ion-ios-speedometer-outline:before,
+.ion-ios-star:before,
+.ion-ios-star-half:before,
+.ion-ios-star-outline:before,
+.ion-ios-stopwatch:before,
+.ion-ios-stopwatch-outline:before,
+.ion-ios-sunny:before,
+.ion-ios-sunny-outline:before,
+.ion-ios-telephone:before,
+.ion-ios-telephone-outline:before,
+.ion-ios-tennisball:before,
+.ion-ios-tennisball-outline:before,
+.ion-ios-thunderstorm:before,
+.ion-ios-thunderstorm-outline:before,
+.ion-ios-time:before,
+.ion-ios-time-outline:before,
+.ion-ios-timer:before,
+.ion-ios-timer-outline:before,
+.ion-ios-toggle:before,
+.ion-ios-toggle-outline:before,
+.ion-ios-trash:before,
+.ion-ios-trash-outline:before,
+.ion-ios-undo:before,
+.ion-ios-undo-outline:before,
+.ion-ios-unlocked:before,
+.ion-ios-unlocked-outline:before,
+.ion-ios-upload:before,
+.ion-ios-upload-outline:before,
+.ion-ios-videocam:before,
+.ion-ios-videocam-outline:before,
+.ion-ios-volume-high:before,
+.ion-ios-volume-low:before,
+.ion-ios-wineglass:before,
+.ion-ios-wineglass-outline:before,
+.ion-ios-world:before,
+.ion-ios-world-outline:before,
+.ion-ipad:before,
+.ion-iphone:before,
+.ion-ipod:before,
+.ion-jet:before,
+.ion-key:before,
+.ion-knife:before,
+.ion-laptop:before,
+.ion-leaf:before,
+.ion-levels:before,
+.ion-lightbulb:before,
+.ion-link:before,
+.ion-load-a:before,
+.ion-load-b:before,
+.ion-load-c:before,
+.ion-load-d:before,
+.ion-location:before,
+.ion-lock-combination:before,
+.ion-locked:before,
+.ion-log-in:before,
+.ion-log-out:before,
+.ion-loop:before,
+.ion-magnet:before,
+.ion-male:before,
+.ion-man:before,
+.ion-map:before,
+.ion-medkit:before,
+.ion-merge:before,
+.ion-mic-a:before,
+.ion-mic-b:before,
+.ion-mic-c:before,
+.ion-minus:before,
+.ion-minus-circled:before,
+.ion-minus-round:before,
+.ion-model-s:before,
+.ion-monitor:before,
+.ion-more:before,
+.ion-mouse:before,
+.ion-music-note:before,
+.ion-navicon:before,
+.ion-navicon-round:before,
+.ion-navigate:before,
+.ion-network:before,
+.ion-no-smoking:before,
+.ion-nuclear:before,
+.ion-outlet:before,
+.ion-paintbrush:before,
+.ion-paintbucket:before,
+.ion-paper-airplane:before,
+.ion-paperclip:before,
+.ion-pause:before,
+.ion-person:before,
+.ion-person-add:before,
+.ion-person-stalker:before,
+.ion-pie-graph:before,
+.ion-pin:before,
+.ion-pinpoint:before,
+.ion-pizza:before,
+.ion-plane:before,
+.ion-planet:before,
+.ion-play:before,
+.ion-playstation:before,
+.ion-plus:before,
+.ion-plus-circled:before,
+.ion-plus-round:before,
+.ion-podium:before,
+.ion-pound:before,
+.ion-power:before,
+.ion-pricetag:before,
+.ion-pricetags:before,
+.ion-printer:before,
+.ion-pull-request:before,
+.ion-qr-scanner:before,
+.ion-quote:before,
+.ion-radio-waves:before,
+.ion-record:before,
+.ion-refresh:before,
+.ion-reply:before,
+.ion-reply-all:before,
+.ion-ribbon-a:before,
+.ion-ribbon-b:before,
+.ion-sad:before,
+.ion-sad-outline:before,
+.ion-scissors:before,
+.ion-search:before,
+.ion-settings:before,
+.ion-share:before,
+.ion-shuffle:before,
+.ion-skip-backward:before,
+.ion-skip-forward:before,
+.ion-social-android:before,
+.ion-social-android-outline:before,
+.ion-social-angular:before,
+.ion-social-angular-outline:before,
+.ion-social-apple:before,
+.ion-social-apple-outline:before,
+.ion-social-bitcoin:before,
+.ion-social-bitcoin-outline:before,
+.ion-social-buffer:before,
+.ion-social-buffer-outline:before,
+.ion-social-chrome:before,
+.ion-social-chrome-outline:before,
+.ion-social-codepen:before,
+.ion-social-codepen-outline:before,
+.ion-social-css3:before,
+.ion-social-css3-outline:before,
+.ion-social-designernews:before,
+.ion-social-designernews-outline:before,
+.ion-social-dribbble:before,
+.ion-social-dribbble-outline:before,
+.ion-social-dropbox:before,
+.ion-social-dropbox-outline:before,
+.ion-social-euro:before,
+.ion-social-euro-outline:before,
+.ion-social-facebook:before,
+.ion-social-facebook-outline:before,
+.ion-social-foursquare:before,
+.ion-social-foursquare-outline:before,
+.ion-social-freebsd-devil:before,
+.ion-social-github:before,
+.ion-social-github-outline:before,
+.ion-social-google:before,
+.ion-social-google-outline:before,
+.ion-social-googleplus:before,
+.ion-social-googleplus-outline:before,
+.ion-social-hackernews:before,
+.ion-social-hackernews-outline:before,
+.ion-social-html5:before,
+.ion-social-html5-outline:before,
+.ion-social-instagram:before,
+.ion-social-instagram-outline:before,
+.ion-social-javascript:before,
+.ion-social-javascript-outline:before,
+.ion-social-linkedin:before,
+.ion-social-linkedin-outline:before,
+.ion-social-markdown:before,
+.ion-social-nodejs:before,
+.ion-social-octocat:before,
+.ion-social-pinterest:before,
+.ion-social-pinterest-outline:before,
+.ion-social-python:before,
+.ion-social-reddit:before,
+.ion-social-reddit-outline:before,
+.ion-social-rss:before,
+.ion-social-rss-outline:before,
+.ion-social-sass:before,
+.ion-social-skype:before,
+.ion-social-skype-outline:before,
+.ion-social-snapchat:before,
+.ion-social-snapchat-outline:before,
+.ion-social-tumblr:before,
+.ion-social-tumblr-outline:before,
+.ion-social-tux:before,
+.ion-social-twitch:before,
+.ion-social-twitch-outline:before,
+.ion-social-twitter:before,
+.ion-social-twitter-outline:before,
+.ion-social-usd:before,
+.ion-social-usd-outline:before,
+.ion-social-vimeo:before,
+.ion-social-vimeo-outline:before,
+.ion-social-whatsapp:before,
+.ion-social-whatsapp-outline:before,
+.ion-social-windows:before,
+.ion-social-windows-outline:before,
+.ion-social-wordpress:before,
+.ion-social-wordpress-outline:before,
+.ion-social-yahoo:before,
+.ion-social-yahoo-outline:before,
+.ion-social-yen:before,
+.ion-social-yen-outline:before,
+.ion-social-youtube:before,
+.ion-social-youtube-outline:before,
+.ion-soup-can:before,
+.ion-soup-can-outline:before,
+.ion-speakerphone:before,
+.ion-speedometer:before,
+.ion-spoon:before,
+.ion-star:before,
+.ion-stats-bars:before,
+.ion-steam:before,
+.ion-stop:before,
+.ion-thermometer:before,
+.ion-thumbsdown:before,
+.ion-thumbsup:before,
+.ion-toggle:before,
+.ion-toggle-filled:before,
+.ion-transgender:before,
+.ion-trash-a:before,
+.ion-trash-b:before,
+.ion-trophy:before,
+.ion-tshirt:before,
+.ion-tshirt-outline:before,
+.ion-umbrella:before,
+.ion-university:before,
+.ion-unlocked:before,
+.ion-upload:before,
+.ion-usb:before,
+.ion-videocamera:before,
+.ion-volume-high:before,
+.ion-volume-low:before,
+.ion-volume-medium:before,
+.ion-volume-mute:before,
+.ion-wand:before,
+.ion-waterdrop:before,
+.ion-wifi:before,
+.ion-wineglass:before,
+.ion-woman:before,
+.ion-wrench:before,
+.ion-xbox:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003741}}
+.ion-alert:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003742}}
+.ion-alert-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003743}}
+.ion-android-add:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003744}}
+.ion-android-add-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003745}}
+.ion-android-alarm-clock:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003746}}
+.ion-android-alert:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003747}}
+.ion-android-apps:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003748}}
+.ion-android-archive:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003749}}
+.ion-android-arrow-back:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003750}}
+.ion-android-arrow-down:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003751}}
+.ion-android-arrow-dropdown:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003752}}
+.ion-android-arrow-dropdown-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003753}}
+.ion-android-arrow-dropleft:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003754}}
+.ion-android-arrow-dropleft-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003755}}
+.ion-android-arrow-dropright:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003756}}
+.ion-android-arrow-dropright-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003757}}
+.ion-android-arrow-dropup:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003758}}
+.ion-android-arrow-dropup-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003759}}
+.ion-android-arrow-forward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003760}}
+.ion-android-arrow-up:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003761}}
+.ion-android-attach:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003762}}
+.ion-android-bar:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003763}}
+.ion-android-bicycle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003764}}
+.ion-android-boat:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003765}}
+.ion-android-bookmark:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003766}}
+.ion-android-bulb:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003767}}
+.ion-android-bus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003768}}
+.ion-android-calendar:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003769}}
+.ion-android-call:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003770}}
+.ion-android-camera:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003771}}
+.ion-android-cancel:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003772}}
+.ion-android-car:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003773}}
+.ion-android-cart:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003774}}
+.ion-android-chat:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003775}}
+.ion-android-checkbox:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003776}}
+.ion-android-checkbox-blank:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003777}}
+.ion-android-checkbox-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003778}}
+.ion-android-checkbox-outline-blank:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003779}}
+.ion-android-checkmark-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003780}}
+.ion-android-clipboard:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003781}}
+.ion-android-close:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003782}}
+.ion-android-cloud:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003783}}
+.ion-android-cloud-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003784}}
+.ion-android-cloud-done:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003785}}
+.ion-android-cloud-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003786}}
+.ion-android-color-palette:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003787}}
+.ion-android-compass:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003788}}
+.ion-android-contact:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003789}}
+.ion-android-contacts:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003790}}
+.ion-android-contract:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003791}}
+.ion-android-create:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003792}}
+.ion-android-delete:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003793}}
+.ion-android-desktop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003794}}
+.ion-android-document:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003795}}
+.ion-android-done:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003796}}
+.ion-android-done-all:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003797}}
+.ion-android-download:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003798}}
+.ion-android-drafts:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003799}}
+.ion-android-exit:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003800}}
+.ion-android-expand:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003801}}
+.ion-android-favorite:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003802}}
+.ion-android-favorite-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003803}}
+.ion-android-film:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003804}}
+.ion-android-folder:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003805}}
+.ion-android-folder-open:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003806}}
+.ion-android-funnel:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003807}}
+.ion-android-globe:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003808}}
+.ion-android-hand:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003809}}
+.ion-android-hangout:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003810}}
+.ion-android-happy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003811}}
+.ion-android-home:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003812}}
+.ion-android-image:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003813}}
+.ion-android-laptop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003814}}
+.ion-android-list:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003815}}
+.ion-android-locate:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003816}}
+.ion-android-lock:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003817}}
+.ion-android-mail:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003818}}
+.ion-android-map:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003819}}
+.ion-android-menu:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003820}}
+.ion-android-microphone:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003821}}
+.ion-android-microphone-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003822}}
+.ion-android-more-horizontal:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003823}}
+.ion-android-more-vertical:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003824}}
+.ion-android-navigate:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003825}}
+.ion-android-notifications:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003826}}
+.ion-android-notifications-none:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003827}}
+.ion-android-notifications-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003828}}
+.ion-android-open:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003829}}
+.ion-android-options:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003830}}
+.ion-android-people:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003831}}
+.ion-android-person:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003832}}
+.ion-android-person-add:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003833}}
+.ion-android-phone-landscape:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003834}}
+.ion-android-phone-portrait:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003835}}
+.ion-android-pin:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003836}}
+.ion-android-plane:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003837}}
+.ion-android-playstore:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003838}}
+.ion-android-print:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003839}}
+.ion-android-radio-button-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003840}}
+.ion-android-radio-button-on:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003841}}
+.ion-android-refresh:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003842}}
+.ion-android-remove:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003843}}
+.ion-android-remove-circle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003844}}
+.ion-android-restaurant:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003845}}
+.ion-android-sad:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003846}}
+.ion-android-search:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003847}}
+.ion-android-send:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003848}}
+.ion-android-settings:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003849}}
+.ion-android-share:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003850}}
+.ion-android-share-alt:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003851}}
+.ion-android-star:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003852}}
+.ion-android-star-half:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003853}}
+.ion-android-star-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003854}}
+.ion-android-stopwatch:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003855}}
+.ion-android-subway:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003856}}
+.ion-android-sunny:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003857}}
+.ion-android-sync:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003858}}
+.ion-android-textsms:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003859}}
+.ion-android-time:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003860}}
+.ion-android-train:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003861}}
+.ion-android-unlock:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003862}}
+.ion-android-upload:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003863}}
+.ion-android-volume-down:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003864}}
+.ion-android-volume-mute:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003865}}
+.ion-android-volume-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003866}}
+.ion-android-volume-up:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003867}}
+.ion-android-walk:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003868}}
+.ion-android-warning:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003869}}
+.ion-android-watch:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003870}}
+.ion-android-wifi:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003871}}
+.ion-aperture:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003872}}
+.ion-archive:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003873}}
+.ion-arrow-down-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003874}}
+.ion-arrow-down-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003875}}
+.ion-arrow-down-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003876}}
+.ion-arrow-expand:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003877}}
+.ion-arrow-graph-down-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003878}}
+.ion-arrow-graph-down-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003879}}
+.ion-arrow-graph-up-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003880}}
+.ion-arrow-graph-up-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003881}}
+.ion-arrow-left-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003882}}
+.ion-arrow-left-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003883}}
+.ion-arrow-left-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003884}}
+.ion-arrow-move:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003885}}
+.ion-arrow-resize:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003886}}
+.ion-arrow-return-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003887}}
+.ion-arrow-return-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003888}}
+.ion-arrow-right-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003889}}
+.ion-arrow-right-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003890}}
+.ion-arrow-right-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003891}}
+.ion-arrow-shrink:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003892}}
+.ion-arrow-swap:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003893}}
+.ion-arrow-up-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003894}}
+.ion-arrow-up-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003895}}
+.ion-arrow-up-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003896}}
+.ion-asterisk:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003897}}
+.ion-at:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003898}}
+.ion-backspace:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003899}}
+.ion-backspace-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003900}}
+.ion-bag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003901}}
+.ion-battery-charging:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003902}}
+.ion-battery-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003903}}
+.ion-battery-full:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003904}}
+.ion-battery-half:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003905}}
+.ion-battery-low:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003906}}
+.ion-beaker:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003907}}
+.ion-beer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003908}}
+.ion-bluetooth:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003909}}
+.ion-bonfire:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003910}}
+.ion-bookmark:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003911}}
+.ion-bowtie:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003912}}
+.ion-briefcase:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003913}}
+.ion-bug:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003914}}
+.ion-calculator:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003915}}
+.ion-calendar:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003916}}
+.ion-camera:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003917}}
+.ion-card:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003918}}
+.ion-cash:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003919}}
+.ion-chatbox:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003920}}
+.ion-chatbox-working:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003921}}
+.ion-chatboxes:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003922}}
+.ion-chatbubble:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003923}}
+.ion-chatbubble-working:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003924}}
+.ion-chatbubbles:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003925}}
+.ion-checkmark:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003926}}
+.ion-checkmark-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003927}}
+.ion-checkmark-round:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003928}}
+.ion-chevron-down:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003929}}
+.ion-chevron-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003930}}
+.ion-chevron-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003931}}
+.ion-chevron-up:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003932}}
+.ion-clipboard:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003933}}
+.ion-clock:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003934}}
+.ion-close:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003935}}
+.ion-close-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003936}}
+.ion-close-round:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003937}}
+.ion-closed-captioning:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003938}}
+.ion-cloud:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003939}}
+.ion-code:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003940}}
+.ion-code-download:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003941}}
+.ion-code-working:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003942}}
+.ion-coffee:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003943}}
+.ion-compass:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003944}}
+.ion-compose:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003945}}
+.ion-connection-bars:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003946}}
+.ion-contrast:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003947}}
+.ion-crop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003948}}
+.ion-cube:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003949}}
+.ion-disc:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003950}}
+.ion-document:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003951}}
+.ion-document-text:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003952}}
+.ion-drag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003953}}
+.ion-earth:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003954}}
+.ion-easel:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003955}}
+.ion-edit:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003956}}
+.ion-egg:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003957}}
+.ion-eject:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003958}}
+.ion-email:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003959}}
+.ion-email-unread:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003960}}
+.ion-erlenmeyer-flask:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003961}}
+.ion-erlenmeyer-flask-bubbles:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003962}}
+.ion-eye:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003963}}
+.ion-eye-disabled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003964}}
+.ion-female:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003965}}
+.ion-filing:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003966}}
+.ion-film-marker:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003967}}
+.ion-fireball:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003968}}
+.ion-flag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003969}}
+.ion-flame:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003970}}
+.ion-flash:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003971}}
+.ion-flash-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003972}}
+.ion-folder:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003973}}
+.ion-fork:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003974}}
+.ion-fork-repo:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003975}}
+.ion-forward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003976}}
+.ion-funnel:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003977}}
+.ion-gear-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003978}}
+.ion-gear-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003979}}
+.ion-grid:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003980}}
+.ion-hammer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003981}}
+.ion-happy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003982}}
+.ion-happy-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003983}}
+.ion-headphone:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003984}}
+.ion-heart:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003985}}
+.ion-heart-broken:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003986}}
+.ion-help:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003987}}
+.ion-help-buoy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003988}}
+.ion-help-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003989}}
+.ion-home:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003990}}
+.ion-icecream:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003991}}
+.ion-image:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003992}}
+.ion-images:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003993}}
+.ion-information:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003994}}
+.ion-information-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003995}}
+.ion-ionic:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003996}}
+.ion-ios-alarm:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003997}}
+.ion-ios-alarm-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003998}}
+.ion-ios-albums:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003999}}
+.ion-ios-albums-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031000}}
+.ion-ios-americanfootball:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031001}}
+.ion-ios-americanfootball-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031002}}
+.ion-ios-analytics:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031003}}
+.ion-ios-analytics-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031004}}
+.ion-ios-arrow-back:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031005}}
+.ion-ios-arrow-down:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031006}}
+.ion-ios-arrow-forward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031007}}
+.ion-ios-arrow-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031008}}
+.ion-ios-arrow-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031009}}
+.ion-ios-arrow-thin-down:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031010}}
+.ion-ios-arrow-thin-left:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031011}}
+.ion-ios-arrow-thin-right:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031012}}
+.ion-ios-arrow-thin-up:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031013}}
+.ion-ios-arrow-up:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031014}}
+.ion-ios-at:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031015}}
+.ion-ios-at-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031016}}
+.ion-ios-barcode:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031017}}
+.ion-ios-barcode-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031018}}
+.ion-ios-baseball:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031019}}
+.ion-ios-baseball-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031020}}
+.ion-ios-basketball:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031021}}
+.ion-ios-basketball-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031022}}
+.ion-ios-bell:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031023}}
+.ion-ios-bell-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031024}}
+.ion-ios-body:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031025}}
+.ion-ios-body-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031026}}
+.ion-ios-bolt:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031027}}
+.ion-ios-bolt-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031028}}
+.ion-ios-book:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031029}}
+.ion-ios-book-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031030}}
+.ion-ios-bookmarks:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031031}}
+.ion-ios-bookmarks-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031032}}
+.ion-ios-box:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031033}}
+.ion-ios-box-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031034}}
+.ion-ios-briefcase:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031035}}
+.ion-ios-briefcase-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031036}}
+.ion-ios-browsers:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031037}}
+.ion-ios-browsers-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031038}}
+.ion-ios-calculator:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031039}}
+.ion-ios-calculator-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031040}}
+.ion-ios-calendar:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031041}}
+.ion-ios-calendar-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031042}}
+.ion-ios-camera:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031043}}
+.ion-ios-camera-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031044}}
+.ion-ios-cart:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031045}}
+.ion-ios-cart-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031046}}
+.ion-ios-chatboxes:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031047}}
+.ion-ios-chatboxes-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031048}}
+.ion-ios-chatbubble:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031049}}
+.ion-ios-chatbubble-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031050}}
+.ion-ios-checkmark:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031051}}
+.ion-ios-checkmark-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031052}}
+.ion-ios-checkmark-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031053}}
+.ion-ios-circle-filled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031054}}
+.ion-ios-circle-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031055}}
+.ion-ios-clock:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031056}}
+.ion-ios-clock-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031057}}
+.ion-ios-close:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031058}}
+.ion-ios-close-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031059}}
+.ion-ios-close-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031060}}
+.ion-ios-cloud:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031061}}
+.ion-ios-cloud-download:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031062}}
+.ion-ios-cloud-download-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031063}}
+.ion-ios-cloud-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031064}}
+.ion-ios-cloud-upload:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031065}}
+.ion-ios-cloud-upload-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031066}}
+.ion-ios-cloudy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031067}}
+.ion-ios-cloudy-night:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031068}}
+.ion-ios-cloudy-night-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031069}}
+.ion-ios-cloudy-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031070}}
+.ion-ios-cog:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031071}}
+.ion-ios-cog-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031072}}
+.ion-ios-color-filter:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031073}}
+.ion-ios-color-filter-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031074}}
+.ion-ios-color-wand:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031075}}
+.ion-ios-color-wand-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031076}}
+.ion-ios-compose:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031077}}
+.ion-ios-compose-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031078}}
+.ion-ios-contact:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031079}}
+.ion-ios-contact-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031080}}
+.ion-ios-copy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031081}}
+.ion-ios-copy-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031082}}
+.ion-ios-crop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031083}}
+.ion-ios-crop-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031084}}
+.ion-ios-download:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031085}}
+.ion-ios-download-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031086}}
+.ion-ios-drag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031087}}
+.ion-ios-email:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031088}}
+.ion-ios-email-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031089}}
+.ion-ios-eye:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031090}}
+.ion-ios-eye-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031091}}
+.ion-ios-fastforward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031092}}
+.ion-ios-fastforward-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031093}}
+.ion-ios-filing:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031094}}
+.ion-ios-filing-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031095}}
+.ion-ios-film:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031096}}
+.ion-ios-film-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031097}}
+.ion-ios-flag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031098}}
+.ion-ios-flag-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031099}}
+.ion-ios-flame:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031100}}
+.ion-ios-flame-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031101}}
+.ion-ios-flask:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031102}}
+.ion-ios-flask-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031103}}
+.ion-ios-flower:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031104}}
+.ion-ios-flower-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031105}}
+.ion-ios-folder:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031106}}
+.ion-ios-folder-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031107}}
+.ion-ios-football:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031108}}
+.ion-ios-football-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031109}}
+.ion-ios-game-controller-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031110}}
+.ion-ios-game-controller-a-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031111}}
+.ion-ios-game-controller-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031112}}
+.ion-ios-game-controller-b-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031113}}
+.ion-ios-gear:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031114}}
+.ion-ios-gear-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031115}}
+.ion-ios-glasses:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031116}}
+.ion-ios-glasses-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031117}}
+.ion-ios-grid-view:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031118}}
+.ion-ios-grid-view-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031119}}
+.ion-ios-heart:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031120}}
+.ion-ios-heart-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031121}}
+.ion-ios-help:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031122}}
+.ion-ios-help-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031123}}
+.ion-ios-help-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031124}}
+.ion-ios-home:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031125}}
+.ion-ios-home-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031126}}
+.ion-ios-infinite:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031127}}
+.ion-ios-infinite-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031128}}
+.ion-ios-information:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031129}}
+.ion-ios-information-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031130}}
+.ion-ios-information-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031131}}
+.ion-ios-ionic-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031132}}
+.ion-ios-keypad:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031133}}
+.ion-ios-keypad-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031134}}
+.ion-ios-lightbulb:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031135}}
+.ion-ios-lightbulb-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031136}}
+.ion-ios-list:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031137}}
+.ion-ios-list-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031138}}
+.ion-ios-location:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031139}}
+.ion-ios-location-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031140}}
+.ion-ios-locked:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031141}}
+.ion-ios-locked-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031142}}
+.ion-ios-loop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031143}}
+.ion-ios-loop-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031144}}
+.ion-ios-medical:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031145}}
+.ion-ios-medical-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031146}}
+.ion-ios-medkit:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031147}}
+.ion-ios-medkit-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031148}}
+.ion-ios-mic:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031149}}
+.ion-ios-mic-off:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031150}}
+.ion-ios-mic-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031151}}
+.ion-ios-minus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031152}}
+.ion-ios-minus-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031153}}
+.ion-ios-minus-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031154}}
+.ion-ios-monitor:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031155}}
+.ion-ios-monitor-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031156}}
+.ion-ios-moon:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031157}}
+.ion-ios-moon-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031158}}
+.ion-ios-more:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031159}}
+.ion-ios-more-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031160}}
+.ion-ios-musical-note:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031161}}
+.ion-ios-musical-notes:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031162}}
+.ion-ios-navigate:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031163}}
+.ion-ios-navigate-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031164}}
+.ion-ios-nutrition:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031165}}
+.ion-ios-nutrition-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031166}}
+.ion-ios-paper:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031167}}
+.ion-ios-paper-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031168}}
+.ion-ios-paperplane:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031169}}
+.ion-ios-paperplane-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031170}}
+.ion-ios-partlysunny:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031171}}
+.ion-ios-partlysunny-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031172}}
+.ion-ios-pause:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031173}}
+.ion-ios-pause-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031174}}
+.ion-ios-paw:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031175}}
+.ion-ios-paw-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031176}}
+.ion-ios-people:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031177}}
+.ion-ios-people-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031178}}
+.ion-ios-person:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031179}}
+.ion-ios-person-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031180}}
+.ion-ios-personadd:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031181}}
+.ion-ios-personadd-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031182}}
+.ion-ios-photos:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031183}}
+.ion-ios-photos-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031184}}
+.ion-ios-pie:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031185}}
+.ion-ios-pie-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031186}}
+.ion-ios-pint:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031187}}
+.ion-ios-pint-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031188}}
+.ion-ios-play:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031189}}
+.ion-ios-play-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031190}}
+.ion-ios-plus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031191}}
+.ion-ios-plus-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031192}}
+.ion-ios-plus-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031193}}
+.ion-ios-pricetag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031194}}
+.ion-ios-pricetag-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031195}}
+.ion-ios-pricetags:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031196}}
+.ion-ios-pricetags-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031197}}
+.ion-ios-printer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031198}}
+.ion-ios-printer-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031199}}
+.ion-ios-pulse:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031200}}
+.ion-ios-pulse-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031201}}
+.ion-ios-rainy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031202}}
+.ion-ios-rainy-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031203}}
+.ion-ios-recording:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031204}}
+.ion-ios-recording-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031205}}
+.ion-ios-redo:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031206}}
+.ion-ios-redo-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031207}}
+.ion-ios-refresh:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031208}}
+.ion-ios-refresh-empty:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031209}}
+.ion-ios-refresh-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031210}}
+.ion-ios-reload:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031211}}
+.ion-ios-reverse-camera:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031212}}
+.ion-ios-reverse-camera-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031213}}
+.ion-ios-rewind:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031214}}
+.ion-ios-rewind-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031215}}
+.ion-ios-rose:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031216}}
+.ion-ios-rose-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031217}}
+.ion-ios-search:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031218}}
+.ion-ios-search-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031219}}
+.ion-ios-settings:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031220}}
+.ion-ios-settings-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031221}}
+.ion-ios-shuffle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031222}}
+.ion-ios-shuffle-strong:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031223}}
+.ion-ios-skipbackward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031224}}
+.ion-ios-skipbackward-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031225}}
+.ion-ios-skipforward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031226}}
+.ion-ios-skipforward-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031227}}
+.ion-ios-snowy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031228}}
+.ion-ios-speedometer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031229}}
+.ion-ios-speedometer-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031230}}
+.ion-ios-star:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031231}}
+.ion-ios-star-half:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031232}}
+.ion-ios-star-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031233}}
+.ion-ios-stopwatch:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031234}}
+.ion-ios-stopwatch-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031235}}
+.ion-ios-sunny:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031236}}
+.ion-ios-sunny-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031237}}
+.ion-ios-telephone:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031238}}
+.ion-ios-telephone-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031239}}
+.ion-ios-tennisball:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031240}}
+.ion-ios-tennisball-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031241}}
+.ion-ios-thunderstorm:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031242}}
+.ion-ios-thunderstorm-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031243}}
+.ion-ios-time:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031244}}
+.ion-ios-time-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031245}}
+.ion-ios-timer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031246}}
+.ion-ios-timer-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031247}}
+.ion-ios-toggle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031248}}
+.ion-ios-toggle-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031249}}
+.ion-ios-trash:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031250}}
+.ion-ios-trash-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031251}}
+.ion-ios-undo:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031252}}
+.ion-ios-undo-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031253}}
+.ion-ios-unlocked:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031254}}
+.ion-ios-unlocked-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031255}}
+.ion-ios-upload:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031256}}
+.ion-ios-upload-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031257}}
+.ion-ios-videocam:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031258}}
+.ion-ios-videocam-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031259}}
+.ion-ios-volume-high:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031260}}
+.ion-ios-volume-low:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031261}}
+.ion-ios-wineglass:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031262}}
+.ion-ios-wineglass-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031263}}
+.ion-ios-world:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031264}}
+.ion-ios-world-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031265}}
+.ion-ipad:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031266}}
+.ion-iphone:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031267}}
+.ion-ipod:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031268}}
+.ion-jet:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031269}}
+.ion-key:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031270}}
+.ion-knife:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031271}}
+.ion-laptop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031272}}
+.ion-leaf:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031273}}
+.ion-levels:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031274}}
+.ion-lightbulb:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031275}}
+.ion-link:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031276}}
+.ion-load-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031277}}
+.ion-load-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031278}}
+.ion-load-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031279}}
+.ion-load-d:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031280}}
+.ion-location:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031281}}
+.ion-lock-combination:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031282}}
+.ion-locked:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031283}}
+.ion-log-in:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031284}}
+.ion-log-out:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031285}}
+.ion-loop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031286}}
+.ion-magnet:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031287}}
+.ion-male:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031288}}
+.ion-man:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031289}}
+.ion-map:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031290}}
+.ion-medkit:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031291}}
+.ion-merge:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031292}}
+.ion-mic-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031293}}
+.ion-mic-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031294}}
+.ion-mic-c:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031295}}
+.ion-minus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031296}}
+.ion-minus-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031297}}
+.ion-minus-round:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031298}}
+.ion-model-s:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031299}}
+.ion-monitor:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031300}}
+.ion-more:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031301}}
+.ion-mouse:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031302}}
+.ion-music-note:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031303}}
+.ion-navicon:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031304}}
+.ion-navicon-round:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031305}}
+.ion-navigate:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031306}}
+.ion-network:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031307}}
+.ion-no-smoking:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031308}}
+.ion-nuclear:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031309}}
+.ion-outlet:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031310}}
+.ion-paintbrush:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031311}}
+.ion-paintbucket:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031312}}
+.ion-paper-airplane:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031313}}
+.ion-paperclip:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031314}}
+.ion-pause:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031315}}
+.ion-person:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031316}}
+.ion-person-add:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031317}}
+.ion-person-stalker:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031318}}
+.ion-pie-graph:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031319}}
+.ion-pin:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031320}}
+.ion-pinpoint:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031321}}
+.ion-pizza:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031322}}
+.ion-plane:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031323}}
+.ion-planet:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031324}}
+.ion-play:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031325}}
+.ion-playstation:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031326}}
+.ion-plus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031327}}
+.ion-plus-circled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031328}}
+.ion-plus-round:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031329}}
+.ion-podium:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031330}}
+.ion-pound:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031331}}
+.ion-power:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031332}}
+.ion-pricetag:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031333}}
+.ion-pricetags:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031334}}
+.ion-printer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031335}}
+.ion-pull-request:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031336}}
+.ion-qr-scanner:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031337}}
+.ion-quote:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031338}}
+.ion-radio-waves:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031339}}
+.ion-record:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031340}}
+.ion-refresh:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031341}}
+.ion-reply:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031342}}
+.ion-reply-all:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031343}}
+.ion-ribbon-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031344}}
+.ion-ribbon-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031345}}
+.ion-sad:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031346}}
+.ion-sad-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031347}}
+.ion-scissors:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031348}}
+.ion-search:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031349}}
+.ion-settings:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031350}}
+.ion-share:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031351}}
+.ion-shuffle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031352}}
+.ion-skip-backward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031353}}
+.ion-skip-forward:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031354}}
+.ion-social-android:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031355}}
+.ion-social-android-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031356}}
+.ion-social-angular:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031357}}
+.ion-social-angular-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031358}}
+.ion-social-apple:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031359}}
+.ion-social-apple-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031360}}
+.ion-social-bitcoin:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031361}}
+.ion-social-bitcoin-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031362}}
+.ion-social-buffer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031363}}
+.ion-social-buffer-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031364}}
+.ion-social-chrome:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031365}}
+.ion-social-chrome-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031366}}
+.ion-social-codepen:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031367}}
+.ion-social-codepen-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031368}}
+.ion-social-css3:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031369}}
+.ion-social-css3-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031370}}
+.ion-social-designernews:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031371}}
+.ion-social-designernews-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031372}}
+.ion-social-dribbble:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031373}}
+.ion-social-dribbble-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031374}}
+.ion-social-dropbox:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031375}}
+.ion-social-dropbox-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031376}}
+.ion-social-euro:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031377}}
+.ion-social-euro-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031378}}
+.ion-social-facebook:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031379}}
+.ion-social-facebook-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031380}}
+.ion-social-foursquare:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031381}}
+.ion-social-foursquare-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031382}}
+.ion-social-freebsd-devil:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031383}}
+.ion-social-github:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031384}}
+.ion-social-github-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031385}}
+.ion-social-google:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031386}}
+.ion-social-google-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031387}}
+.ion-social-googleplus:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031388}}
+.ion-social-googleplus-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031389}}
+.ion-social-hackernews:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031390}}
+.ion-social-hackernews-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031391}}
+.ion-social-html5:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031392}}
+.ion-social-html5-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031393}}
+.ion-social-instagram:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031394}}
+.ion-social-instagram-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031395}}
+.ion-social-javascript:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031396}}
+.ion-social-javascript-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031397}}
+.ion-social-linkedin:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031398}}
+.ion-social-linkedin-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031399}}
+.ion-social-markdown:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031400}}
+.ion-social-nodejs:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031401}}
+.ion-social-octocat:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031402}}
+.ion-social-pinterest:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031403}}
+.ion-social-pinterest-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031404}}
+.ion-social-python:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031405}}
+.ion-social-reddit:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031406}}
+.ion-social-reddit-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031407}}
+.ion-social-rss:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031408}}
+.ion-social-rss-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031409}}
+.ion-social-sass:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031410}}
+.ion-social-skype:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031411}}
+.ion-social-skype-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031412}}
+.ion-social-snapchat:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031413}}
+.ion-social-snapchat-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031414}}
+.ion-social-tumblr:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031415}}
+.ion-social-tumblr-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031416}}
+.ion-social-tux:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031417}}
+.ion-social-twitch:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031418}}
+.ion-social-twitch-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031419}}
+.ion-social-twitter:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031420}}
+.ion-social-twitter-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031421}}
+.ion-social-usd:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031422}}
+.ion-social-usd-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031423}}
+.ion-social-vimeo:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031424}}
+.ion-social-vimeo-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031425}}
+.ion-social-whatsapp:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031426}}
+.ion-social-whatsapp-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031427}}
+.ion-social-windows:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031428}}
+.ion-social-windows-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031429}}
+.ion-social-wordpress:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031430}}
+.ion-social-wordpress-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031431}}
+.ion-social-yahoo:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031432}}
+.ion-social-yahoo-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031433}}
+.ion-social-yen:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031434}}
+.ion-social-yen-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031435}}
+.ion-social-youtube:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031436}}
+.ion-social-youtube-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031437}}
+.ion-soup-can:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031438}}
+.ion-soup-can-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031439}}
+.ion-speakerphone:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031440}}
+.ion-speedometer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031441}}
+.ion-spoon:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031442}}
+.ion-star:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031443}}
+.ion-stats-bars:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031444}}
+.ion-steam:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031445}}
+.ion-stop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031446}}
+.ion-thermometer:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031447}}
+.ion-thumbsdown:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031448}}
+.ion-thumbsup:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031449}}
+.ion-toggle:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031450}}
+.ion-toggle-filled:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031451}}
+.ion-transgender:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031452}}
+.ion-trash-a:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031453}}
+.ion-trash-b:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031454}}
+.ion-trophy:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031455}}
+.ion-tshirt:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031456}}
+.ion-tshirt-outline:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031457}}
+.ion-umbrella:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031458}}
+.ion-university:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031459}}
+.ion-unlocked:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031460}}
+.ion-upload:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031461}}
+.ion-usb:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031462}}
+.ion-videocamera:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031463}}
+.ion-volume-high:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031464}}
+.ion-volume-low:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031465}}
+.ion-volume-medium:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031466}}
+.ion-volume-mute:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031467}}
+.ion-wand:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031468}}
+.ion-waterdrop:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031469}}
+.ion-wifi:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031470}}
+.ion-wineglass:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031471}}
+.ion-woman:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031472}}
+.ion-wrench:before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/dietApp\/app\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031473}}
+.ion-xbox:before {
+  content: "";
+}

@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.mbit.angularionicinit"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.mbit.angularionicinit"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.mbit.angularionicinit"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.mbit.angularionicinit"
+        }
+    },
+    "dependent_plugins": {}
+}

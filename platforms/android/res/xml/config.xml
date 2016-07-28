@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.example" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Keyboard">
+        <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" onload="true" value="org.apache.cordova.statusbar.StatusBar" />
+    </feature>
+    <icon density="ldpi" src="res/drawable-ldpi/icon.png" />
+    <icon density="mdpi" src="res/drawable-mdpi/icon.png" />
+    <icon density="hdpi" src="res/drawable-hdpi/icon.png" />
+    <icon density="xhdpi" src="res/drawable-xhdpi/icon.png" />
+    <name>Diet App</name>
+    <description>
+        An Ionic Framework and Cordova project.
+    </description>
+    <author email="elina.burina@gmail.com" href="http://github.com/JaneD03">
+        Mbit Studio
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="splashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="4000" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="res/drawable-port-ldpi/screen.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="res/drawable-port-mdpi/screen.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="res/drawable-port-hdpi/screen.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="res/drawable-port-xhdpi/screen.png" />
+    <gap:splash gap:platform="ios" height="320" src="res/drawable-port-ldpi/screen.png" width="200" />
+    <gap:splash gap:platform="ios" height="480" src="res/drawable-port-mdpi/screen.png" width="320" />
+    <gap:splash gap:platform="ios" height="800" src="res/drawable-port-hdpi/screen.png" width="480" />
+    <gap:splash gap:platform="ios" height="1280" src="res/drawable-port-xhdpi/screen.png" width="720" />
+</widget>

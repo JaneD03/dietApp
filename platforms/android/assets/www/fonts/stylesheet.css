@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Facit-Bold';
+    src: url('facit-bold-opentype-webfont.eot');
+    src: url('facit-bold-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-bold-opentype-webfont.woff2') format('woff2'),
+    url('facit-bold-opentype-webfont.woff') format('woff'),
+    url('facit-bold-opentype-webfont.ttf') format('truetype'),
+    url('facit-bold-opentype-webfont.svg#facitbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Facit-Extrabold';
+    src: url('facit-extrabold-opentype-webfont.eot');
+    src: url('facit-extrabold-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-extrabold-opentype-webfont.woff') format('woff'),
+    url('facit-extrabold-opentype-webfont.ttf') format('truetype'),
+    url('facit-extrabold-opentype-webfont.svg#facitextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Facit-Extralight';
+    src: url('facit-extralight-opentype-webfont.eot');
+    src: url('facit-extralight-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-extralight-opentype-webfont.woff') format('woff'),
+    url('facit-extralight-opentype-webfont.ttf') format('truetype'),
+    url('facit-extralight-opentype-webfont.svg#facitextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Facit-Light';
+    src: url('facit-light-opentype-webfont.eot');
+    src: url('facit-light-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-light-opentype-webfont.woff2') format('woff2'),
+    url('facit-light-opentype-webfont.woff') format('woff'),
+    url('facit-light-opentype-webfont.ttf') format('truetype'),
+    url('facit-light-opentype-webfont.svg#facitlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Facit-Regular';
+    src: url('facit-regular-opentype-webfont.eot');
+    src: url('facit-regular-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-regular-opentype-webfont.woff') format('woff'),
+    url('facit-regular-opentype-webfont.ttf') format('truetype'),
+    url('facit-regular-opentype-webfont.svg#facitregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Facit-Semibold';
+    src: url('facit-semibold-opentype-webfont.eot');
+    src: url('facit-semibold-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+    url('facit-semibold-opentype-webfont.woff2') format('woff2'),
+    url('facit-semibold-opentype-webfont.woff') format('woff'),
+    url('facit-semibold-opentype-webfont.ttf') format('truetype'),
+    url('facit-semibold-opentype-webfont.svg#facitsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
